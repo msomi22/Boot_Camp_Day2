@@ -6,7 +6,7 @@ class SendSMS(object):
 	username: The API username required for sending SMS
 	apikey: A key required for sending SMS
 	recipients: The recipients mobile numbers , ie 0718953974
-    message: The message to send
+    message: The message to sent
 	"""
 	def __init__(self,username='',apikey='',recipients='',message=''):
 		self.username = username
