@@ -13,7 +13,7 @@ class SendSMS(object):
 		self.apikey = apikey
 		self.recipients = recipients
 		self.message = message
-    # The method thet is called to send the SMS
+    # This method is called when sending an sms
 	def sendNow(self):
 		gateway = AfricasTalkingGateway(self.username, self.apikey)
 		try:
