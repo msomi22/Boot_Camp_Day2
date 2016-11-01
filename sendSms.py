@@ -3,7 +3,7 @@ from AfricasTalkingGateway import AfricasTalkingGateway, AfricasTalkingGatewayEx
 class SendSMS(object):
 	"""
 	Attributes:
-	username: The API username requied for sending SMS
+	username: The API username required for sending SMS
 	apikey: A key required for sending SMS
 	recipients: The recipients mobile numbers , ie 0718953974
     message: The message to send
@@ -27,15 +27,15 @@ class SendSMS(object):
 			
 		except AfricasTalkingGatewayException, e:
 			print 'Encountered an error while sending the SMS: %s' % str(e)
-		
 
-# Prompt the user to enter the required credentials 
-username = raw_input("Enter Your API username: ")
-apikey   = raw_input("Enter Your API Key: ")
-recepients  = raw_input("Enter Your Recepient, separate with comma for multiple Recepients: ")
-message = raw_input("Type Your Message: ")
+if __name__ == '__main__':
+	# Prompt the user to enter the required credentials 
+	username = raw_input("Enter Your API username: ")
+	apikey   = raw_input("Enter Your API Key: ")
+	recepients  = raw_input("Enter Your Recepient, separate with comma for multiple Recepients: ")
+	message = raw_input("Type Your Message: ")
 
-# Instantiate the sendSMS class
-send = SendSMS(username,apikey,recepients,message)
-#Invoke the send sms function 
-send.sendNow() 
+	# Instantiate the sendSMS class
+	send = SendSMS(username,apikey,recepients,message)
+	#Invoke the send sms function 
+	send.sendNow() 

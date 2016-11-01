@@ -7,12 +7,26 @@ This program uses Python commandline to communicate with SMS Gateway, and thus s
 To send an SMS u need:
       1) API username and 
       2) API key
+      3) Recipient(s) mobile number
+      4) The message to be sent
 
+      STEPS
 
-      You must create an Account with the Gateway provider (in this case AfricasTalking)
+      Create  an account here https://africastalking.com/
 
-      Enter the mobile number, : The one to receive the SMS
-      Then enter the message
+      Get your API username and key (You have 10 free SMSes)
 
+      Run sendSms.py
+
+      You will be prompted to provide the following:
+
+      1) Your API Username
+      2) Your API key
+      3) The Recipient(s) moblie number e.g 0718953974
+      4) The message you want to send
+
+      Good, your message will be sent if your credentials are correct, otherwise you will get a detailed error message .
+
+      
 
 
