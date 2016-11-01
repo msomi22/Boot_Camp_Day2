@@ -5,7 +5,7 @@ A simple command-line application that consumes a public API using HTTP client l
 This program uses Python commandline to communicate with SMS Gateway, and thus sending SMS 
 
 To send an SMS u need:
-      1) API username and 
+      1) API username 
       2) API key
       3) Recipient(s) mobile number
       4) The message to be sent
@@ -25,7 +25,8 @@ To send an SMS u need:
       3) The Recipient(s) moblie number e.g 0718953974
       4) The message you want to send
 
-      Good, your message will be sent if your credentials are correct, otherwise you will get a detailed error message .
+      Good, your message will be sent if your credentials are correct, 
+      otherwise you will get a detailed error message .
 
       
 
